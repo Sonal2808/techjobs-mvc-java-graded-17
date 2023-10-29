@@ -24,9 +24,9 @@ public class JobData {
 
     private static ArrayList<Job> allJobs;
     private static ArrayList<Employer> allEmployers = new ArrayList<>();
-    private static ArrayList<Location> allLocations = new ArrayList<>();
-    private static ArrayList<PositionType> allPositionTypes = new ArrayList<>();
-    private static ArrayList<CoreCompetency> allCoreCompetency = new ArrayList<>();
+    private static final ArrayList<Location> allLocations = new ArrayList<>();
+    private static final ArrayList<PositionType> allPositionTypes = new ArrayList<>();
+    private static final ArrayList<CoreCompetency> allCoreCompetency = new ArrayList<>();
 
     /**
      * Fetch list of all job objects from loaded data,
@@ -44,7 +44,7 @@ public class JobData {
 
     /**
      * Returns the results of searching the Jobs data by field and search term.
-     *
+     * <p>
      * For example, searching for employer "Enterprise" will include results
      * with "Enterprise Holdings, Inc".
      *
